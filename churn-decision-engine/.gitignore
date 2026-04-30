@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Raw data — auto-downloaded by pipeline, not needed on cloud
+data/raw/telco_churn.csv
+
+# Processed CSVs — committed so Streamlit Cloud works without re-running pipeline
+
+# Large model artifact (11MB — too big for GitHub/Streamlit Cloud)
+data/outputs/model_rf.pkl
+
+# Notebooks scratch
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Pytest
+.pytest_cache/
+.coverage
+
+# Streamlit secrets
+.streamlit/secrets.toml
